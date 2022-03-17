@@ -45,7 +45,9 @@ function App() {
       <form onSubmit={handleAddTodo}>
         <input ref={todoNameRef} type="text" />
         <button type="submit">Add Todo</button>
+        <br />
         <button type="reset">Clear</button>
+        <br />
         <button onClick={handleClearTodos}>Clear Complete Todos</button>
         <div>{todos.filter((todo) => !todo.isCompleted).length} left to do</div>
       </form>
